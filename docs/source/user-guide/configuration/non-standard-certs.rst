@@ -13,8 +13,11 @@ to create a conda environment over HTTP.
 
 You may need to set the conda environment to use the root certificate
 provided by your company rather than conda’s generic ones.
+You may set Conda to point at the system truststore by running
+``conda config --set ssl_verify truststore``.
+Refer to `Troubleshooting SSL Certificate Errors <https://docs.conda.io/projects/conda/en/stable/user-guide/troubleshooting.html#ssl-certificate-errors>`_ for more information.
 
-One workflow to resolve this on macOS is:
+One alternate workflow to resolve this on macOS is:
 
 * Open Chrome, got to any website, click on the lock icon on the left
   of the URL. Click on «Certificate» on the dropdown. In the next window
